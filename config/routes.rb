@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
     get '/news' => 'news#index'
+    get '/spotify_authorize' => 'spotify#authorize'
+    get '/callback' => 'spotify#callback'
   end
 end
